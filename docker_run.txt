@@ -1,0 +1,1 @@
+docker run --name promethues --rm -d -p 9090:9090 -v /home/tqi_jtorres/Documents/Estudos/prometheus_e_grafana/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
