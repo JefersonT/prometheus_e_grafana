@@ -14,4 +14,7 @@ services:
     container_name: grafana
     ports:
       - "3000:3000"
+    user: "${UID}"
+    volumes:
+      - /home/tqi_jtorres/Documents/Estudos/prometheus_e_grafana/grafana:/var/lib/grafana
     restart: unless-stopped
