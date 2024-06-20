@@ -4,6 +4,6 @@
         1. npm install
         2. node ./index.js
 
-- para executar o docker-compose é necessario definir a variável de ambente no terminal:
+- para executar o docker-compose é necessario executar o seguinte comando no terminal:
 
         export UID=$(id -u)
