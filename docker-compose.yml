@@ -7,7 +7,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - /home/tqi_jtorres/Documents/Estudos/prometheus_e_grafana/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
     restart: unless-stopped
   grafana:
     image: grafana/grafana
@@ -16,5 +16,5 @@ services:
       - "3000:3000"
     user: "${UID}"
     volumes:
-      - /home/tqi_jtorres/Documents/Estudos/prometheus_e_grafana/grafana:/var/lib/grafana
+      - ./grafana:/var/lib/grafana
     restart: unless-stopped
